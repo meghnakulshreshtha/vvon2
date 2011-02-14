@@ -1,0 +1,20 @@
+<%= form_for @studentprofile do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :usn %><br />
+    <%= f.text_field :usn %>
+  </p>
+  <p>
+    <%= f.label :sem %><br />
+    <%= f.text_field :sem %>
+  </p>
+  <p>
+    <%= f.label :dept %><br />
+    <%= f.text_field :dept %>
+  </p>
+  <p>
+    <%= f.label :role %><br />
+    <%= f.text_field :role %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,11 @@
+one:
+  usn: MyString
+  sem: 1
+  dept: MyString
+  role: MyString
+
+two:
+  usn: MyString
+  sem: 1
+  dept: MyString
+  role: MyString

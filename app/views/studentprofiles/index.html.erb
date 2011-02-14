@@ -1,0 +1,23 @@
+<% title "Studentprofiles" %>
+
+<table>
+  <tr>
+    <th>Usn</th>
+    <th>Sem</th>
+    <th>Dept</th>
+    <th>Role</th>
+  </tr>
+  <% for studentprofile in @studentprofiles %>
+    <tr>
+      <td><%= studentprofile.usn %></td>
+      <td><%= studentprofile.sem %></td>
+      <td><%= studentprofile.dept %></td>
+      <td><%= studentprofile.role %></td>
+      <td><%= link_to "Show", studentprofile %></td>
+      <td><%= link_to "Edit", edit_studentprofile_path(studentprofile) %></td>
+      <td><%= link_to "Destroy", studentprofile, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Studentprofile", new_studentprofile_path(studentprofile) %></p>

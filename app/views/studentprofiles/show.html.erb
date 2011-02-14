@@ -1,0 +1,24 @@
+<% title "Studentprofile" %>
+
+<p>
+  <strong>Usn:</strong>
+  <%= @studentprofile.usn %>
+</p>
+<p>
+  <strong>Sem:</strong>
+  <%= @studentprofile.sem %>
+</p>
+<p>
+  <strong>Dept:</strong>
+  <%= @studentprofile.dept %>
+</p>
+<p>
+  <strong>Role:</strong>
+  <%= @studentprofile.role %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_studentprofile_path(@studentprofile) %> |
+  <%= link_to "Destroy", @studentprofile, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", studentprofiles_path %>
+</p>
